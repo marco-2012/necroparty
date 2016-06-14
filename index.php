@@ -1,4 +1,6 @@
 <?php
+
+/* ya no hay cambios aqui */
 /**
  * Controlador frontal index.php
  *
