@@ -1,0 +1,590 @@
+@font-face {
+	font-family: 'icons-necro-party';
+	src: url('public/iconfonts/font/icons-necro-party.eot?59089643');
+	src: url('public/iconfonts/font/icons-necro-party.eot?59089643#iefix') format('embedded-opentype'),
+		url('public/iconfonts/font/icons-necro-party.woff?59089643') format('woff'),
+		url('public/iconfonts/font/icons-necro-party.ttf?59089643') format('truetype'),
+		url('public/iconfonts/font/icons-necro-party.svg?59089643#icons-necro-party') format('svg');
+}
+
+.bottomRight{
+	bottom: 0px;
+	position: absolute;
+	right: 0px;
+}
+
+.iconBgCir{
+	background: #1E1342;
+	border: 1px solid #1E1342;
+	border-radius: 2em;
+	padding: 0.2em;
+}
+
+.iconfont{
+	font-family: "icons-necro-party";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+body{
+	background: #000;
+	color: #fff;
+	font-size: 14px;
+
+	border: 1px solid #f00;
+	height: 100%;
+}
+
+.barTitle{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a7d98+0,143546+54,143546+100 */
+	background: #3a7d98; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3a7d98 0%, #143546 54%, #143546 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #3a7d98 0%,#143546 54%,#143546 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #3a7d98 0%,#143546 54%,#143546 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a7d98', endColorstr='#143546',GradientType=0 ); /* IE6-9 */
+
+	font-weight: bold;
+	margin: 0px;
+	padding: 0.3em 1em;
+}
+
+.barTitle2{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a182c9+0,4f2a91+46,1b0f35+100 */
+background: rgb(161,130,201); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(161,130,201,1) 0%, rgba(79,42,145,1) 46%, rgba(27,15,53,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(161,130,201,1) 0%,rgba(79,42,145,1) 46%,rgba(27,15,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(161,130,201,1) 0%,rgba(79,42,145,1) 46%,rgba(27,15,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a182c9', endColorstr='#1b0f35',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* margen 'small' */
+.marginSM{
+	margin: 0.5em 0.5em;
+}
+
+/* margen 'medium' */
+.marginMD{
+	margin: 1em 1em;
+}
+
+/* margen 'large' */
+.marginLG{
+	margin: 1.5em 1.5em;
+}
+
+.clear{
+	clear: both;
+}
+
+.badge-red{
+	background: #900;
+}
+
+/* ************************ */
+/* ******** HEADER ******** */
+/* ************************ */
+
+header{
+	background-image: url('../imgs/header/headerBg01.jpg');
+	height: 339px;
+	margin: auto;
+	position: relative;
+	width: 1080px;
+}
+
+header img{
+	position: absolute;
+	top: 30px;
+}
+
+header div.title{
+	position: absolute;
+	top: 50px;
+	right: 20%;
+}
+
+header h1{
+	font-size: 5em;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0.1em 0.1em #000;
+}
+
+header p{
+	font-size: 1.5em;
+	font-style: italic;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+header p span{
+	display: block;
+}
+
+/* *********************************** */
+/* ******** MENU FLOTANTE TOP ******** */
+/* *********************************** */
+
+#menuGral{
+	box-shadow: 0em 1.5em 2.5em #000;
+	display: none;
+	font-size: 1.5em;
+	padding: 0.4em 1em;
+	position: fixed;
+	top: 0px;
+	width: 1080px;
+	z-index: 998;
+}
+
+#menuGral div{
+	cursor: pointer;
+	width: 48%;
+}
+
+#menuGral i{
+	font-size: 0.8em;
+}
+
+.menuFloatLeft{
+	float: left;
+	text-align: left;
+}
+
+.menuFloatRight{
+	float: right;
+	text-align: right;
+}
+/* ********************** */
+/* ******** MENU ******** */
+/* ********************** */
+
+#menu-left{
+	background: #061c27;
+	font-size: 1.2em;
+	font-weight: bold;
+	height: 50px;
+	letter-spacing: 5px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	width: 1080px;
+	z-index: 999;
+}
+
+#menu-left ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu-left ul li{
+	display: inline-block;
+	padding: 14px 5px;
+}
+
+#menu-left ul li a{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#26566a+0,0f2733+54,0d2833+100 */
+background: #26566a; /* Old browsers */
+background: -moz-linear-gradient(top,  #26566a 0%, #0f2733 54%, #0d2833 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #26566a 0%,#0f2733 54%,#0d2833 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #26566a 0%,#0f2733 54%,#0d2833 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26566a', endColorstr='#0d2833',GradientType=0 ); /* IE6-9 */
+
+	color: #fff;
+	padding: 14px 5px;
+	text-decoration: none;
+}
+
+#menu-left ul li a:hover{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#51aed0+0,2e6579+54,2e6579+100 */
+background: #51aed0; /* Old browsers */
+background: -moz-linear-gradient(top,  #51aed0 0%, #2e6579 54%, #2e6579 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #51aed0 0%,#2e6579 54%,#2e6579 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #51aed0 0%,#2e6579 54%,#2e6579 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51aed0', endColorstr='#2e6579',GradientType=0 ); /* IE6-9 */
+
+	color: #fff;
+	text-decoration: none;
+}
+
+/* *************************** */
+/* ******** CONTENIDO ******** */
+/* *************************** */
+
+.contGral{
+	margin: 2em auto;
+	position: relative;
+	width: 1080px;
+}
+
+.module01{
+	background: #061C27;
+	left: 0px;
+	padding-bottom: 2em;
+	position: relative;
+	text-align: left;
+	top: 0px;
+	width: 72%;
+}
+
+.module01 h3{
+	text-align: left;
+}
+
+/* RECUADROS PEQUEÑOS DE LA SECCION "SUMMARY" */
+.articleMin{
+	background: #0d2833;
+	border-radius: 0 0 1em 1em;
+	box-shadow: 0.8em 1em 0.5em #000;
+	display: inline-block;
+	margin: 2.5em 0.8em 1.5em 0.8em;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	width: 30%;
+}
+
+.articleMin img{
+	height: auto;
+	margin-top: 1em;
+	width: 90%;
+}
+
+.articleMin p{
+	background: #173d50;
+	border: 3px solid #061c27;
+	margin: 1em auto 2.5em auto;
+	padding: 0.5em 0.2em 2.5em 0.2em;
+	position: relative;
+	text-align: left;
+	width: 90%;
+	font-size: 1.2em;
+}
+
+.articleMin p a{
+	background: #4e85a5;
+	color: #fff;
+	font-weight: bold;
+	padding: 0.2em;
+}
+
+.data{
+	background: #000;
+	font-size: 0.9em;
+	left: 10%;
+	position: absolute;
+	bottom: -3em;
+	width: 80%;
+}
+
+.data span{ display: block; padding: 0.2em; }
+
+/* ESPACIO DEL LOGIN */
+
+#menu-right, #profile-right{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 27%;
+	z-index: 997;
+}
+
+#menu-right{
+	background: #061C27;
+}
+
+/* ESPACIO DEL RESUMEN DEL PERFIL */
+
+#profile-right{
+	background: #061C27;
+	padding: 0;
+	text-align: center;
+}
+
+#profile-right img{
+	border: 1.5em solid #133946;
+	margin: 1.5em 0;
+	width: 60%;
+}
+
+#profile-right h3{ font-size: 1.4em; padding: 0.5em 0; }
+
+#profile-right h5{
+	background: #133946;
+	font-weight: bold;
+	margin: 0;
+	padding: 1em 0;
+	text-align: center;
+}
+
+#profile-right ul{
+	background: #133946;
+	color: #fff;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0 0 1.5em 0;
+	padding: 0.7em 0;
+	text-align: left;
+}
+
+#profile-right  ul li{
+	padding: 0.3em 1em; 
+}
+
+#profile-right  ul a{
+	color: #fff;
+}
+
+#profile-right hr{ margin: 0; padding: 0; }
+
+#profile-right a:last-child{
+	background: #2e6577;
+	color: #fff;
+	display: block;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 0.5em;
+	text-align: center;
+}
+
+
+/* *************************************************** */
+/* ********** FORMULARIO PARA CREAR USUARIO ********** */
+/* *************************************************** */
+
+#frm-create{
+	background: #061C27;
+	padding-top: 3em;
+	padding-bottom: 2em;
+}
+
+#menu-right form{ padding: 1.5em 0; }
+
+/* *********************************** */
+/* ********** MEDIA QUERIES ********** */
+/* *********************************** */
+
+@media screen and (max-width: 1080px){
+
+	header, #menuGral, .contGral{ width: 100%; }
+	header{ margin-top: 3em; }
+	#menuGral{ display: block; }
+	#menu-left, #menu-right, #profile-right{ position: fixed; top: 1em; width: 40%;  }
+	#menu-left{
+		left: -100%;
+		margin: 0;
+		text-align: left;
+		top: 2.8em;
+		width: 40%;
+	}
+
+	#menu-left ul li{
+		background: #061c27;
+		border: 1px solid #48707f;
+		display: block;
+		padding: 11px 0px;
+	}
+
+	#menu-left ul li a{
+		background: none;
+		padding: 13px 5px;
+		text-decoration: none;
+	}
+
+	#menu-left ul li a:hover, #menu-left ul li:hover{
+		background: #50abcd;
+	}
+
+	.module01{ width: 100%; }
+	#menu-right{ right: -100%; }
+	#profile-right{
+		font-size: 1.2em;
+		text-align: left;
+		width: 60%;
+	}
+
+	#profile-right img{
+		display: inline-block;
+		border: 1.5em solid #133946;
+		margin: 1.5em 1.5em;
+		vertical-align: top;
+		width: 22%;
+	}
+
+	#profile-right div{
+		display: inline-block;
+		margin-top: 1.5em;
+		text-align: left;
+		vertical-align: top;
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 780px) and (max-width: 1080px){
+	/*body{ border: 1px solid #f00; }*/
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px){
+	/*body{ border: 2px solid #0f0; }*/
+	/*header{ border: 1px solid #0f0; }*/
+
+	header{
+		background: #000;
+		height: 270px;
+		margin: auto;
+		margin-top: 1em;
+	}
+
+	header img{
+		left: 22%;
+		opacity: 0.3;
+		top: 10px;
+	}
+
+	header div.title{
+		left: 22%;
+		top: 40px;
+	}
+
+	header h1{
+		font-size: 3.5em;
+		font-weight: bold;
+	}
+
+	header p{
+		font-size: 1.5em;
+		font-weight: bold;
+		letter-spacing: 2px;
+	}
+
+	header div.title{ right: 10%; }
+	#menu-left, #menu-right{ width: 100%; }
+
+	/* RECUADROS PEQUEÑOS DE LA SECCION "SUMMARY" */
+	.articleMin{
+		display: block;
+		margin: 3em auto 5em auto;
+		padding-bottom: 1em;
+		width: 90%;
+	}
+
+	.articleMin img{ width: 50%; }
+
+	.articleMin p{ font-size: 1.3em; }
+	.data{ font-size: 1em; }
+	
+	/* RECUADRO DEL PERFIL DE USUSARIO CUANDO HA INICIADO SESION */
+	#profile-right{
+		font-size: 1.2em;
+		width: 90%;
+	}
+
+	#profile-right img{
+		display: inline-block;
+		border: 0.7em solid #133946;
+		margin: 1.5em 1em;
+		vertical-align: top;
+		width: 25%;
+	}
+
+	#profile-right div{
+		width: 62%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	/*body{ border: 1px solid #00f; }
+	header{ border: 1px solid #00f; }*/
+
+	#menuGral{ box-shadow: 0em 0.8em 1.5em #000; }
+	#menu-left, #menu-right{ width: 100%; }
+
+	header{
+		background: #000;
+		height: 230px;
+		margin: auto;
+		margin-top: 1em;
+	}
+
+	header img{
+		height: 209px;
+		left: 20%;
+		opacity: 0.3;
+		top: 10px;
+		width: 251px;
+	}
+
+	header div.title{
+		left: 20%;
+		top: 30px;
+	}
+
+	header h1{
+		font-size: 2.5em;
+		font-weight: bold;
+	}
+
+	header p{
+		font-size: 1em;
+		font-weight: bold;
+		letter-spacing: 2px;
+	}
+	header div.title{ right: 10%; }
+
+	/* RECUADROS PEQUEÑOS DE LA SECCION "SUMMARY" */
+	.articleMin{
+		display: block;
+		margin: 3em auto 5em auto;
+		padding-bottom: 1em;
+		width: 90%;
+	}
+
+	.articleMin img{ width: 70%; }
+	.articleMin p{ font-size: 1.3em; }
+	.data{ font-size: 1em; }
+
+	/* RECUADRO DEL PERFIL DE USUSARIO CUANDO HA INICIADO SESION */
+	#profile-right{
+		width: 95%;
+	}
+
+	#profile-right img{
+		border: 0.4em solid #133946;
+		margin: 1.5em 0.5em;
+		width: 27%;
+	}
+
+	#profile-right div{
+		width: 64%;
+	}
+}
