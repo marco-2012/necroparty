@@ -1,6 +1,5 @@
 <?php
 
-/* ya no hay cambios aqui */
 /**
  * Controlador frontal index.php
  *
@@ -27,7 +26,4 @@ if(isset($_GET['controller'])){
 	lanzarAccion($controllerObj);
 }
 
-// ejemplo de cambio
-// aqui marco garcias agrega una nueva linea
-// perfecto ;)
 ?>
