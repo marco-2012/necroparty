@@ -7,6 +7,7 @@
  * que visita el usuario realmente es esta, en este caso 
  * index.php.
  */
+
 // configuración global
 require_once('config/global.php');
 
@@ -19,7 +20,6 @@ require_once('core/ControladorFrontal.func.php');
 // clase de sesiones
 require_once('libs/Session.php');
 require_once('libs/Debug.php');
-
 // cargamos controladores y acciones
 if(isset($_GET['controller'])){
 	$controllerObj = cargarControlador($_GET['controller']);
@@ -28,4 +28,6 @@ if(isset($_GET['controller'])){
 	$controllerObj = cargarControlador(CONTROLADOR_DEFECTO);
 	lanzarAccion($controllerObj);
 }
+
+// ejemplo de cambio
 ?>
