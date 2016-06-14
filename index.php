@@ -7,16 +7,12 @@
  * que visita el usuario realmente es esta, en este caso 
  * index.php.
  */
-
 // configuración global
 require_once('config/global.php');
-
 // base para los controladores
 require_once('core/ControladorBase.php');
-
 // funciones para el controlador frontal
 require_once('core/ControladorFrontal.func.php');
-
 // clase de sesiones
 require_once('libs/Session.php');
 require_once('libs/Debug.php');
@@ -30,4 +26,6 @@ if(isset($_GET['controller'])){
 }
 
 // ejemplo de cambio
+// aqui marco garcias agrega una nueva linea
+// perfecto ;)
 ?>
